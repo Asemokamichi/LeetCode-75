@@ -1,4 +1,4 @@
-package com.asemokamichi.leetcode.ArrayOrString;
+package com.asemokamichi.leetcode.ArrayOrString.MergeStringsAlternately;
 
 class Solution {
     public String mergeAlternately(String word1, String word2) {
