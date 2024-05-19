@@ -1,4 +1,4 @@
-package com.asemokamichi.TwoPointers.MoveZeroes;
+package com.asemokamichi.leetcode.TwoPointers.MoveZeroes;
 
 class Solution {
     public void moveZeroes(int[] nums) {
