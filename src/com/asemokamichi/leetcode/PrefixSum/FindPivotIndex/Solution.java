@@ -1,5 +1,6 @@
 package com.asemokamichi.leetcode.PrefixSum.FindPivotIndex;
 
+
 class Solution {
     public static int pivotIndex(int[] nums) {
         int sum = 0;
