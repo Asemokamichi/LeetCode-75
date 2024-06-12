@@ -1,19 +1,39 @@
 package com.asemokamichi;
 
-import java.util.List;
+import com.asemokamichi.leetcode.Person;
+
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        String s1="Hello";
-        String s2="Hello";
-        String s3=new String("Hello");
-        String s4=new String("Hello");
-        String s5 = s4;
-        s5 = "hjk";
-        System.out.println(s1==s2);
-        System.out.println(s2==s3);
-        System.out.println(s3.equals(s2));
-        System.out.println(s5);
-        System.out.println(s4);
+        HashMap<Object, Integer> map = new HashMap<>();
+        map.put(null, 3);
+        map.put(null, 2);
+        map.put(2, 3);
+        map.put(0, 3);
+        Person k = new Person("gjhb");
+        map.put(k, 9);
+        map.put(new Person("skldm"), 897);
+        k.setName("skldm");
+        for (Object key: map.keySet()) {
+            System.out.printf("key = %s value = %d\n", key, map.get(key));
+        }
+        System.out.println(map.get(null));
+        System.out.println(map.get(new Person("gjhb")));
+        System.out.println(map.containsKey(null));
+
+        Set<Object> set = new HashSet<>();
+        set.add(null);
+        set.add(null);
+        set.add(90);
+        set.add("jks");
+
+        System.out.println(set);
+
+        Object object = 0;
+        System.out.println("hashCode = " + object.hashCode());
+//        System.out.println("equals null and null = " + object.equals(null));
+
+
     }
 }
